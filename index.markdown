@@ -25,7 +25,7 @@ During my first postdoc I got very excited about
 the experimental rigor and vast knowledge in **visual neuroscience**
 and the power of  **encoding models** that quantitatively model the
 relationship between objective properties of the world (e.g., the number
-f stimuli in a stimulus array) and neural activity. By inverting such
+of stimuli in a stimulus array) and neural activity. By inverting such
 models, we can track which information the brain has access to from
 moment-to-moment. I think this is a very useful measure to learn more about
 how brain actually works.
