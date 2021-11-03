@@ -31,12 +31,13 @@ github_username:  Gilles86
 
 # Build settings
 theme: minima
-plugins:
-  - jekyll-feed
+# plugins:
+#   - jekyll-feed
 
 # Compile sass
 sass:
   sass_dir: assets/css
+  style: compressed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
