@@ -1,0 +1,56 @@
+<div class="row my-4">
+  <div class="col-3 text-center">
+
+    {% assign image_path = paper.path | split:'/' | last  %}
+    {% assign image_path = image_path | replace:'.md':'.png' %}
+    {% assign paper_id = image_path | replace:'.png':'' %}
+    {% assign pdf_path = paper_id | append: '.pdf'  %}
+
+    {% assign pdf_file = site.static_files | where_exp: "static_file", "static_file.path contains pdf_path" | first %}
+
+    {% if pdf_file %}
+    {% assign paper_url = pdf_file.path %}
+    {% elsif paper.doi %}
+    {% assign paper_url = paper.doi | prepend:"https://doi.org/" %}
+    {% else %}
+    {% assign paper_url = "#" %}
+    {% endif %}
+
+    {% assign image_file = site.static_files | where_exp: "static_file", "static_file.path contains image_path" | first %}
+    {% if image_file %}<a data-bs-toggle="collapse" href="#abstract_{{paper_id}}" role="button" aria-expanded="false" aria-controls="abstract_{{paper_id}}"><img class="img-fluid rounded" src="{{ image_file.path }}"></a>{% endif %}
+
+  </div>
+  <div class="col-9 text-align-left">
+    <h6 class="mb-1"><a class="link-dark text-decoration-none" href="{{ paper_url }}">{{ paper.title }} ({% if pdf_file %}<i class="fas fa-file-pdf"></i>{% endif %})</a></h6>
+    <p class="text-muted mb-1"><small>
+        {% for author_ in paper.authors %}
+        {% if forloop.last %}
+        {% capture author %}{{ author_ }}{% endcapture %}
+        {% else %}
+        {% capture author %}{{ author_ }}, {% endcapture %}
+        {% endif %}
+        {{ author | replace:'Gilles de Hollander','<strong>Gilles de Hollander</strong>' | replace:'*','<sup>*</sup>'  }}
+        {% endfor %}
+      </small>
+    </p>
+    <p class="mb-1"><em>{{ paper.journal }}</em> {{ paper.ref }}
+
+      {% if paper.doi %}
+      doi: <a class="link-dark" href="https://doi.org/{{ paper.doi }}">{{ paper.doi }}</a>
+      {% endif %}
+
+    </p>
+    <div class="collapse" id="abstract_{{paper_id}}">
+      <div class="card card-body">
+        {{ paper.abstract }}
+      </div>
+    </div>
+    <p  class="mb-2 mt-2">
+      <a data-bs-toggle="collapse" href="#abstract_{{paper_id}}" role="button" aria-expanded="false" aria-controls="abstract_{{paper_id}}">
+        Abstract
+      </a>
+    </p>
+
+
+  </div>
+</div>
