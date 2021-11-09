@@ -41,7 +41,7 @@ sass:
 
 collections:
   publications:
-    output: true
+    output: false
     permalink: /publications/:path/
 
 # Exclude from processing.

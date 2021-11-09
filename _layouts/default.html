@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
-  {% if page.layout == 'Gilles de Hollander, Brain Scientist' %}
+  {% if page.layout == 'Gilles de Hollander' %}
   <title>{{ page.title }}</title>
   {% else %}
   <title>Gilles de Hollander - {{ page.title }}</title>
@@ -23,12 +23,10 @@
 
 <body>
   <!-- Navbar -->
-  <div class="container mh-1 mt-2">
+  <div class="container mh-1 mt-0">
     <nav class="navbar navbar-expand-lg rounded bg-dark navbar-dark p-1" id="navbar">
       <div class="container">
-        {% if page.layout != 'home' %}
-        <a href="{{ site.url }}" class="navbar-brand m-0"><h1>Gilles de Hollander, Brain Scientist<h1></a>
-        {% endif %}
+        <a href="{{ site.url }}" class="navbar-brand m-0"><h3>Gilles de Hollander, Brain Scientist<h3></a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
           <span class="navbar-toggler-icon"></span>
@@ -55,11 +53,24 @@
         <div class="row">
           <div class="col-3">
           </div>
-          <div class="col-sm d-flex justify-content-start">
-            <h1 class="dosis">{{ page.title }}</h1>
+          <div class="col-sm d-flex justify-content-start mb-2">
+            <h1><u>{{ page.title }}</u></h1>
           </div>
         </div>
+        {% if page.simple_layout %}
+        <div class="row">
+          <div class="col-3 text-center">
+            {% if page.img %}
+            <img src="{{ page.img | relative_url }}" class="rounded mx-auto img-fluid" alt="Gilles" width="200"/>
+            {% endif %}
+          </div>
+          <div class="col-sm">
+            {{content}}
+          </div>
+        </div>
+        {% else %}
           {{ content }}
+        {% endif %}
       </div>
     </div>
 
@@ -67,14 +78,18 @@
 
 
     <div class="mh-1 mt-2 p-4 rounded bg-light" style="--bs-bg-opacity: .75;">
-      <div class="row mx-0 align-items-end">
-        <div class="col-sm">
+      <div class="row mx-0">
+        <div class="col-sm align-middle">
           <a href="https://www.econ.uzh.ch/en/people/researchers/hollander.html">
-            <img alt="University of Zurich" height="80" src="/assets/imgs/uzh_logo.svg">
+            <img alt="University of Zurich" height="50" src="/assets/imgs/uzh_logo.svg">
           </a>
         </div>
+
         <div class="col-3 align-bottom text-end">
           <div class="btn-group" role="group">
+            <a href="mailto:gilles.de.hollander@gmail.com" role="button" class="btn btn-md btn-secondary">
+              <i class="fas fa-envelope-square fa-2x"></i>
+            </a>
             <a href="https://scholar.google.com/citations?user=vFqZH9kAAAAJ" role="button" class="btn btn-md btn-secondary">
               <i class="ai ai-google-scholar-square ai-2x" aria-hidden="true"></i>
             </a>
@@ -88,6 +103,7 @@
               <i class="fab fa-github-square fa-2x"></i>
             </a>
           </div>
+
         </div>
       </div>
     </div>

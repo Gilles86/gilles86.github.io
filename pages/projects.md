@@ -1,7 +1,9 @@
 ---
 layout: page
 title: Projects
-permalink: /papers/
+permalink: /projects/
+simple_layout: true
+
 ---
 
-TEST
+Stay tuned for more soon.
