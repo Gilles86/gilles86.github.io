@@ -12,7 +12,7 @@ img: assets/imgs/picture_gilles.jpg
 
 **Short CV**:
  * MSc in Artificial intelligence (University of Amsterdam)
- * PhD with [Prof. Birte U. Forstmann](https://www.birteforstmann.com/) (University of Amsterdam)
+ * PhD with [Prof. Birte U. Forstmann](https://www.birteforstmann.com/) (University of Amsterdam) - **[Download thesis]({{ 'assets/pdfs/thesis.pdf' | relative_url }})**
    * Subdivisions in the Subthalamic Nucleus (Basal Ganglia)
    * 7 Tesla MRI
    * Post-mortem tissue
@@ -43,12 +43,12 @@ relationship between objective properties of the world (e.g., the number
 of stimuli in a stimulus array) and neural activity. By inverting such
 models, we can track which information the brain has access to from
 moment-to-moment. I think this is a very useful measure to learn more about
-how brain actually works.
+how the brain works.
 
 At the ZNE, I work on the question of **how the quirks of simple,
 everyday (economic) decisions are rooted in fundamental brain properties**.
 To me, a central and fundamental property of the brain is that is uses its
-representational capacity only where it is most needed.
+costly representational capacity only where it is most needed.
 This has profound consequences for economic
 choice behavior. For example:
 * **People have trouble understanding the objective magnitude of large numbers**:
