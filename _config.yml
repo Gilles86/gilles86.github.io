@@ -43,6 +43,9 @@ collections:
   publications:
     output: false
     permalink: /publications/:path/
+  projects:
+    output: false
+    permalink: /projects/:path/
 
 # Exclude from processing.
 # The following items will not be processed, by default.

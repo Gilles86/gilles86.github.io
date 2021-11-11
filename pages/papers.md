@@ -2,7 +2,6 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: our publications
 ---
 
 {% assign preprints = site.publications | where_exp:"pub", "pub.preprint" %}
@@ -17,6 +16,9 @@ description: our publications
 </div>
 {% for paper in preprints %}
 {% include paper.html paper=paper %}
+{% if forloop.last == false %}
+---
+{% endif %}
 {% endfor %}
 
 <!-- Papers -->
@@ -30,7 +32,11 @@ description: our publications
   </div>
 </div>
 
-  {% for paper in year.items %}
-  {% include paper.html paper=paper %}
-  {% endfor %}
-  {% endfor %}
+{% for paper in year.items %}
+{% include paper.html paper=paper %}
+
+{% if forloop.last == false %}
+---
+{% endif %}
+{% endfor %}
+{% endfor %}

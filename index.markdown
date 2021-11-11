@@ -15,6 +15,10 @@ To learn more about
  * **Who I am**, have a look at the [about]({{ site.baseurl }}{% link pages/about.md %})-page
  * **What I do**, have a look at the [projects]({{ site.baseurl }}{% link pages/projects.md %})-page
  * **What I have done**, have a look at the [publications]({{ site.baseurl }}{% link pages/papers.md %})-page
+ * **Software packages** I built:
+   * [nideconv](https://nideconv.readthedocs.io/en/latest/)
+   * [pymp2rage](https://pymp2rage.readthedocs.io/en/latest/)
+   * [braincoder](https://github.com/Gilles86/braincoder)
 
 
 ## Updates
