@@ -179,7 +179,7 @@ _whole-brain UHF-fMRI measurements_.
 <h4 class="card-title">Contact information</h4>
 </div>
 <div class="card-body">
-<p class="card-text" style="line-height: 1;">Gilles de hollander  </p>
+<p class="card-text" style="line-height: 1;">Gilles de Hollander  </p>
 <p class="card-text" style="line-height: 1;">University of Zurich  </p>
 <p class="card-text" style="line-height: 1;">Department of Economics  </p>
 <p class="card-text" style="line-height: 1;">Blümlisalpstrasse 10, Room BLU-208  </p>
