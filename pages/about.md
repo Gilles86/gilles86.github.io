@@ -13,9 +13,8 @@ img: assets/imgs/picture_gilles.jpg
 
     <div class="card-body">
     <h5 class="card-subtitle mb-2 text-muted">2019 - now: Postdoc with <a class="text-muted" href="https://www.econ.uzh.ch/en/people/faculty/ruff.html">Prof. Christian C. Ruff</a> (University of Zurich)</h5>
-    <p class="card-text">I used encoding models of numerical representations in parietal
-    cortex to characterize individual differences in numerical acuity and risk
-    aversion.</p>
+    <p class="card-text">I used <strong>neural encoding models of numerical representations for fMRI</strong>
+    to characterize individual differences in <strong>numerical acuity</strong> and <strong>risk aversion</strong></p>
     <hr>
     </div>  
 
@@ -80,7 +79,7 @@ img: assets/imgs/picture_gilles.jpg
   <div class="col-sm-5">
     <div class="card">
     <div class="card-header">
-      <h5 class="card-title">2020: UZH Forschungskredit</h5>
+      <h5 class="card-title">2021: UZH Forschungskredit</h5>
     </div>
       <div class="card-body">
       <p class="card-text">To study influence of TMS on parietal number
