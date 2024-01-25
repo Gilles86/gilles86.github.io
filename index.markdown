@@ -16,9 +16,10 @@ To learn more about
  * **What I do**, have a look at the [projects]({{ site.baseurl }}{% link pages/projects.md %})-page
  * **What I have done**, have a look at the [publications]({{ site.baseurl }}{% link pages/papers.md %})-page
  * **Software packages** I built:
+   * [braincoder](https://braincoder-devs.github.io/)
+   * [bauer](https://github.com/ruffgroup/bauer/tree/main)
    * [nideconv](https://nideconv.readthedocs.io/en/latest/)
    * [pymp2rage](https://pymp2rage.readthedocs.io/en/latest/)
-   * [braincoder](https://github.com/Gilles86/braincoder)
 
 
 ## Updates

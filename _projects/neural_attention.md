@@ -36,3 +36,5 @@ during a task and how these representations change as a function
 of attention. Moreover, because we use a Bayesian inversion scheme,
 we can also probe the fidelity with which stimuli are represented
 as a function of, for example, attention or retinotopic location.
+
+We implemented these models in the `braincoder` package. You can find more information about this package [here](https://braincoder-devs.github.io/).

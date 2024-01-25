@@ -104,8 +104,10 @@ img: assets/imgs/picture_gilles.jpg
 <div class="card-body">
 <h5 class="card-subtitle mb-2 text-muted">Maintainer</h5>
 <ul>
-<li><a href="https://nideconv.readthedocs.io/en/latest/">nideconv</a></li>
-<li><a href="https://pymp2rage.readthedocs.io/en/latest/">pymp2rage</a></li>
+<li><a href="https://braincoder-devs.github.io/">braincoder</a> - Python package to fit inverted encoding models to neural data</li>
+<li><a href="https://github.com/ruffgroup/bauer/tree/main">bauer</a> - Python a package to fit complex choice models in a Bayesian hierarchical framework</li>
+<li><a href="https://nideconv.readthedocs.io/en/latest/">nideconv</a> -  Python package to deconvolve (neural) time series</li>
+<li><a href="https://pymp2rage.readthedocs.io/en/latest/">pymp2rage</a> - Python package to calculate T1 maps and T1UNI for a MP2RAGE sequence</li>
 </ul>
 
 <h5 class="card-subtitle mb-2 text-muted">Contributor</h5>
