@@ -49,7 +49,7 @@ img: assets/imgs/picture_gilles.jpg
     </div>
 
 <div class="card-body">
-<p class="card-text"><a href="/assets/pdfs/cv_gilles_feb2022.pdf"><strong>(Download academic CV)</strong></a></p>
+<p class="card-text"><a href="/assets/pdfs/cv_gilles_oct2024.pdf"><strong>(Download academic CV)</strong></a></p>
 </div>
 </div>
 
