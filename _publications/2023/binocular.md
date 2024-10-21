@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hierarchical and fine-scale mechanisms of binocular rivalry for conscious perception"
-date:   2022-03-02 18:00:00
+date:   2023-02-11 18:00:00
 journal: bioRxiv
 preprint: True
 authors: [Chencan Qian, Zhiqiang Chen, Gilles de Hollander, Tomas Knapen, Zihao Zhang, Sheng He, Peng Zhang]
