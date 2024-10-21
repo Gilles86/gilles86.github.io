@@ -9,7 +9,7 @@ source "https://rubygems.org"
 # Happy Jekylling!
 # gem "jekyll", "~> 4.2.1"
 # gem "github-pages", "~> 219", group: :jekyll_plugins
-gem "jekyll", "~> 4.2.1"
+gem "jekyll", "~> 3.9.0"
 
 gem 'csv'
 gem 'base64'
