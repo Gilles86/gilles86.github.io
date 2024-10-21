@@ -6,8 +6,8 @@ status: ongoing
 order: 2
 ---
 
-Humans can actively process much less information than what they have in
-principle access to. Imagine crossing a busy street: you probably
+Humans can actively process much less information than what they have 
+access to. Imagine crossing a busy street: you probably
 sequentially observe different aspects of the traffic situation before
 you commit to crossing the street. This moving ''spotlight'' is a
 form of *selective attention*.
