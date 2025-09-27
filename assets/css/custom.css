@@ -1,0 +1,17 @@
+/* Custom colors and fonts */
+body {
+  background-color: #CDC42D !important;  /* Your yellow background */
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Dosis', sans-serif;
+}
+
+h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.dosis {
+  font-family: 'Dosis', sans-serif;
+}

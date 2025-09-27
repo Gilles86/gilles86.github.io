@@ -1,2 +1,4 @@
 ---
 BUNDLE_PATH: "vendor/bundle"
+BUNDLE_BUILD__EVENTMACHINE: "--with-cppflags=-std=c++11"
+BUNDLE_WITHOUT: "github_pages"

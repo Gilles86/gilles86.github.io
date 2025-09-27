@@ -4,7 +4,7 @@ permalink: /publications/
 title: Publications
 ---
 
-{% assign preprints = site.publications | where_exp:"pub", "pub.preprint" %}
+{% assign preprints = site.publications | where_exp:"pub", "pub.preprint" | sort: "date" | reverse %}
 <!-- {{ site.static_files | jsonify}} -->
 <!-- Preprints -->
 <div class="row">
