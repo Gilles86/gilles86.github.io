@@ -12,6 +12,7 @@ My main research aim is to understand how **humans make simple everyday decision
 and how their **decisions are shaped by fundamental properties of brain architecture**.
 
 ### Updates
+ * **2025-11-10** Check out our new [preprint](https://www.biorxiv.org/content/10.1101/2025.11.03.685504v1) on how **the effect of stress on risky decision-making and numerical representations**!
  * **2025-09-27** Check out our new [preprint](https://www.biorxiv.org/content/10.1101/2025.09.25.675916v1) on how **numerical receptive fields shift depending on task demands**!
  * **2025-09-21** Check out my [material](https://github.com/Gilles86/computation-in-neuroeconomics-workshop2025/) for a workshop on **Computational Methods for Neuroeconomics** in beautiful Soglio, Switzerland.
 
