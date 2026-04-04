@@ -1,0 +1,12 @@
+---
+layout: post
+title: "A Neural Population Code for Value in Human Orbitofrontal Cortex"
+date:   2026-03-28 18:00:00
+journal: bioRxiv
+preprint: True
+authors: [Raphaël Le Bouc, Gilles de Hollander, Marcus Grueschow, Shira M. Lupkin, Vincent B. McGinty, Rafael Polania, Christian C. Ruff]
+abstract: "Adaptive behavior depends on the ability to rapidly evaluate options and select those that promise the greatest benefit. Such decisions rely on neural representations of value distributed across multiple brain regions, including the orbitofrontal (OFC) and ventromedial prefrontal cortex (vmPFC), yet the neural code underlying these value representations remains unresolved. The dominant account proposes that OFC/vmPFC neurons encode value through a linear rate code, resulting in a single point estimate at the population level. However, this framework is difficult to reconcile with the heterogeneous tuning observed in individual OFC/vmPFC neurons, which can exhibit both positive and negative correlations with subjective value. Here, we test the alternative hypothesis—derived from theories of neural coding in perceptual systems—that the OFC/vmPFC implements a probabilistic population code based on non-linear tuning functions. Such tuning allows population activity to represent not only subjective value but also the uncertainty surrounding it, in the form of a flexible posterior probability distribution. Using a population receptive field framework, we fitted non-linear value-tuning functions to functional magnetic resonance imaging data acquired during a value judgment task. Bayesian inversion of this encoding model enabled robust out-of-sample decoding of subjective value across several brain regions, including the OFC/vmPFC. Importantly, value uncertainty estimated from decoded medial OFC/vmPFC posteriors predicted within-subject preference instability, choice stochasticity, and confidence in option values, demonstrating its behavioral relevance and suggesting that participants had conscious access to this information. Complementary single-unit recordings from a subset of monkey OFC neurons similarly revealed nonlinear value-selective tuning. Together, these findings establish a probabilistic, non-linear population code for value in the OFC/vmPFC. This provides a neural foundation for the probabilistic code through which value, and uncertainty about value, can guide choice."
+ref: 2026.03.28.715037
+doi: 10.64898/2026.03.28.715037
+publisher: Cold Spring Harbor Laboratory
+---
