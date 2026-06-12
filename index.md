@@ -14,6 +14,7 @@ and how their **decisions are shaped by fundamental properties of brain architec
 ### Updates
 
 #### 2026
+ * **2026-06-12** Our cognitive-modelling package [bauer](https://bauer.readthedocs.io/en/latest/) now supports **DDM and race-diffusion likelihoods**, so models can be informed by reaction times as well as choices.
  * **2026-06-12** Check out our new [preprint](https://doi.org/10.64898/2026.06.08.730978) on how **separable efficient codes shape both perception and value** along the pathway from sensation to action.
  * **2026-04-04** Check out our new [preprint](https://doi.org/10.64898/2026.03.28.715037) on how **the OFC/vmPFC implements a probabilistic population code for value**.
 
