@@ -67,5 +67,10 @@ collections:
 #   - vendor/gems/
 #   - vendor/ruby/
 #
+exclude:
+  - CLAUDE.md
+  - serve_docker.sh
+  - README.md
+
 log_level: info
 
