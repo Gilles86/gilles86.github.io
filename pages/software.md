@@ -42,7 +42,7 @@ cognitive neuroscience. Two of them sit at the heart of most of my research:
     </div>
     <div class="col-md-7">
       <div class="card-body">
-        <h4 class="card-title"><a class="link-dark text-decoration-none" href="https://bauer.readthedocs.io/en/latest/">bauer</a></h4>
+        <h4 class="card-title"><a class="link-dark text-decoration-none" href="https://ruffgroup.github.io/bauer/">bauer</a></h4>
         <p class="card-text">bauer (Bayesian Estimation of Perceptual, Numerical and Risky
         choice) is a <a href="https://www.pymc.io/">PyMC</a>-based library for fitting
         hierarchical Bayesian cognitive models to behavioural decision-making data. It covers
@@ -57,7 +57,7 @@ cognitive neuroscience. Two of them sit at the heart of most of my research:
         example, perceptual acuity from response caution.</p>
         <p class="card-text"><small class="text-muted">
           <a class="text-muted" href="https://github.com/ruffgroup/bauer/tree/main">Source</a> &middot;
-          <a class="text-muted" href="https://bauer.readthedocs.io/en/latest/">Documentation &amp; tutorials</a>
+          <a class="text-muted" href="https://ruffgroup.github.io/bauer/">Documentation &amp; tutorials</a>
         </small></p>
       </div>
     </div>

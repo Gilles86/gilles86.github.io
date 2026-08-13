@@ -22,7 +22,6 @@ img: assets/imgs/picture_gilles.jpg
   <h5 class="card-subtitle mb-2 text-muted">2017 - 2019: Postdoc with <a class="text-muted" href="https://tknapen.github.io/">Dr. Tomas Knapen</a> (Vrije Universiteit)</h5>
     <p class="card-text">I mapped out <strong>ocular dominance columns</strong> and
     <strong>retinotopy</strong> across cortical depth, using <strong>0.7mm isotropic functional MRI</strong>.</p>
-    <p class="card-text"><a href="http://aeneas.labs.vu.nl/odc/sub-06/">Demo</a></p>
     <hr>
   </div>
 
@@ -88,7 +87,7 @@ img: assets/imgs/picture_gilles.jpg
       <p class="card-text">CHF 110,384</p>      
       </div>
 
-    <a href="https://www.research.uzh.ch/en/funding/postdoc/fkpostdoc.html"><img class="card-img-bottom p-4" src="{{ '/assets/imgs/uzh_logo.svg' | relative_url }}"></a>
+    <a href="https://www.research.uzh.ch/en/funding/postdoc.html"><img class="card-img-bottom p-4" src="{{ '/assets/imgs/uzh_logo.svg' | relative_url }}"></a>
     </div>
   </div>
 
