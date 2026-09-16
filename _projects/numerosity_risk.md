@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Parietal numerosity representations and risky decision-making"
-collaborators: [Miguel Barretto Garcia, Marcus Grueschow, Rafael Polania, Michael Woodford, Christian C Ruff]
+collaborators: [Miguel Barretto Garcia, Marcus Grueschow, Rafael Polania, Michael Woodford, Franciszek Hennel, Arthur Prat-Carrabin, Saurabh Bedi, Samuel J. Gershman, Christian C Ruff]
 status: ongoing
 order: 1
 ---
@@ -49,6 +49,14 @@ particularly noisy numerical representations in parietal cortex*, are also
 predictions of the model of Khaw et al.: the more noisy an individual's
 perception is, the more he/she will revert to her priors/biases.
 
-Currently, we are replicating these findings using 7T fMRI, to see if
-fluctuations in the fidelity of numerical representations can also predict
-trial-to-trial fluctuations in risk aversion.
+Using 7T fMRI, we then showed that risk attitudes are not a fixed trait:
+they shift rapidly across contexts and repetitions of the same decision,
+because people rely more on their prior beliefs about payoffs when parietal
+magnitude representations are noisy
+([de Hollander et al., 2026, *Nature Communications*](https://doi.org/10.1038/s41467-026-77402-6)).
+
+Together with Arthur Prat-Carrabin and Sam Gershman, we also showed that these
+numerical representations are not static either: numerical receptive fields in
+parietal cortex shift and rescale when the range of relevant numbers changes,
+implementing efficient coding on the fly
+(Prat-Carrabin\*, de Hollander\* et al., accepted in *Nature Communications*; [preprint](https://doi.org/10.1101/2025.09.25.675916)).
