@@ -1,9 +1,17 @@
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-8885366-2"></script>
+<!-- Google tag (gtag.js) - Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6BQD3ZGCSK"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-8885366-2');
+  gtag('config', 'G-6BQD3ZGCSK');
+
+  // PDF downloads and DOI clicks are tracked by GA4 enhanced measurement
+  // (file_download / click events). Abstract opens need a custom event:
+  document.addEventListener('show.bs.collapse', function (e) {
+    if (e.target.id && e.target.id.indexOf('abstract_') === 0) {
+      gtag('event', 'abstract_open', { paper: e.target.id.replace('abstract_', '') });
+    }
+  });
 </script>
