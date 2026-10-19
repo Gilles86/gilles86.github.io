@@ -35,6 +35,9 @@ corte that are particularly sensitive to the left or right eye.
 {% include image.html url="/assets/imgs/projects/odcs/maps.png"
 description=description width="90" %}
 
+You can explore the ocular dominance column maps of three participants on their
+own cortical surfaces in these [interactive brain maps](/odc_viewer/).
+
 
 Moreover, due to the 0.7mm resolution, we could also dissociate fMRI activity
 across different *laminae*. Specifically, we could show that whereas differential

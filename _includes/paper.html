@@ -49,6 +49,9 @@
       <button type="button" class="btn btn-secondary btn-sm mt-2" data-bs-toggle="collapse" href="#abstract_{{paper_id}}" role="button" aria-expanded="false" aria-controls="abstract_{{paper_id}}">
         Abstract...
       </button>
+      {% for link in paper.links %}
+      <a class="btn btn-secondary btn-sm mt-2" href="{{ link.url }}">{{ link.name }}</a>
+      {% endfor %}
     </p>
 
 

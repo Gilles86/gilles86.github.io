@@ -90,6 +90,12 @@ collections:
 #   - vendor/gems/
 #   - vendor/ruby/
 #
+# pycortex static viewers (odc_viewer/) keep their data in data/__<hash>_0.png
+# files. Jekyll skips files starting with "_" unless they are listed here
+# (matched on the file name, not the path).
+include:
+  - "__*_0.png"
+
 exclude:
   - CLAUDE.md
   - Gemfile

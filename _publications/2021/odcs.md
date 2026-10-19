@@ -8,4 +8,7 @@ abstract: Ultra-high field MRI can functionally image the cerebral cortex of hum
 ref: "228, 117683"
 doi: 10.1016/j.neuroimage.2020.117683
 preprint: false
+links:
+  - name: Interactive brain maps
+    url: /odc_viewer/
 ---
