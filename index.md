@@ -18,6 +18,7 @@ and how their **decisions are shaped by fundamental properties of brain architec
 
 {: .news}
  * **Nov** [Out in *Nature Communications*](https://doi.org/10.1038/s41467-026-78851-9), with [Arthur Prat-Carrabin](https://arthurprat.com) and [Sam Gershman](https://gershmanlab.com): numerical receptive fields in parietal cortex shift and rescale to the range of numbers. Explore them in our [3D brain viewers](https://ruffgroup.github.io/neural_priors_viewers/).
+ * **Nov** [Interactive 3D brain maps](/odc_viewer/) of ocular dominance columns from our 2021 *NeuroImage* paper, on each participant's own cortical surface.
  * **Oct** [New preprint](https://doi.org/10.64898/2026.10.08.757623) led by Maike Renkert, with Karin Kucian and Sofie Valk: dyscalculia reflects less precise numerical representations in parietal cortex and an altered allocation of this cortex to functional networks.
  * **Sep** [Out in *Nature Communications*](https://doi.org/10.1038/s41467-026-77402-6): rapid changes in risk attitudes originate from Bayesian inference on noisy parietal magnitude representations.
  * **Jun** [New preprint](https://doi.org/10.64898/2026.06.08.730978): separable efficient codes shape both perception and value along the pathway from sensation to action.
