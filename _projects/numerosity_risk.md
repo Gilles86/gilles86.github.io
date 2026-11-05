@@ -59,4 +59,4 @@ Together with Arthur Prat-Carrabin and Sam Gershman, we also showed that these
 numerical representations are not static either: numerical receptive fields in
 parietal cortex shift and rescale when the range of relevant numbers changes,
 implementing efficient coding on the fly
-(Prat-Carrabin\*, de Hollander\* et al., accepted in *Nature Communications*; [preprint](https://doi.org/10.1101/2025.09.25.675916)).
+([Prat-Carrabin\*, de Hollander\* et al., 2026, *Nature Communications*](https://doi.org/10.1038/s41467-026-78851-9)).
