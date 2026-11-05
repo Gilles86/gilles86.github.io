@@ -1,11 +1,11 @@
 # Interactive demos shown on the homepage. Keep to three at most.
 - title: Numerosity receptive fields
   note: 39 participants, Nature Communications (2026)
-  url: https://ruffgroup.github.io/neural_priors_viewers/
+  url: https://ruffgroup.github.io/neural_priors_viewers/model3/sub-12/index.html
   image: /assets/imgs/demos/numerosity.jpg
   alt: Preferred numerosity map on the inflated cortical surface of one participant
 - title: Ocular dominance columns
   note: 3 participants, NeuroImage (2021)
-  url: /odc_viewer/
+  url: /odc_viewer/sub-06/index.html
   image: /assets/imgs/demos/odc.jpg
   alt: Ocular dominance column map around the calcarine sulcus on the medial surface of one hemisphere
