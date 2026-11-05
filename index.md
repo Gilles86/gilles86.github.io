@@ -6,11 +6,15 @@ layout: home
 title: Gilles de Hollander, PhD
 heading: Welcome
 ---
-I am a cognitive neuroscientist based at the [Zurich Center for Neuroeconomics
-(ZNE)](https://www.zne.uzh.ch/en.html) at the University of Zurich (UZH).
+I am a cognitive neuroscientist in the lab of [Christian Ruff](https://www.econ.uzh.ch/en/people/faculty/ruff.html) at the [Zurich Center for Neuroeconomics
+(ZNE)](https://www.zne.uzh.ch/en.html), University of Zurich (UZH).
 
 My main research aim is to understand how **humans make simple everyday decisions**
 and how their **decisions are shaped by fundamental properties of brain architecture**.
+
+### Explore in 3D
+
+{% include demos.html %}
 
 ### Updates
 
@@ -33,9 +37,3 @@ and how their **decisions are shaped by fundamental properties of brain architec
  * **Sep** [Material](https://github.com/Gilles86/computation-in-neuroeconomics-workshop2025/) from my workshop on Computational Methods for Neuroeconomics in Soglio, Switzerland.
 
 </details>
-
-To learn more about
- * **Who I am**, have a look at the [about]({{ site.baseurl }}{% link pages/about.md %})-page
- * **What I do**, have a look at the [projects]({{ site.baseurl }}{% link pages/projects.md %})-page
- * **What I have done**, have a look at the [publications]({{ site.baseurl }}{% link pages/papers.md %})-page
- * **Software** I built, have a look at the [software]({{ site.baseurl }}{% link pages/software.md %})-page

@@ -57,3 +57,55 @@ h4, h5, h6 {
     width: auto;
   }
 }
+
+/* Homepage demo thumbnails */
+.demo-card {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  border-radius: .375rem;
+  background-color: #212529;
+  color: #fff;
+  text-decoration: none;
+  transition: transform .15s ease;
+}
+
+.demo-card:hover,
+.demo-card:focus {
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.demo-title,
+.demo-note {
+  display: block;
+  padding: 0 .75rem;
+}
+
+.demo-title {
+  padding-top: .5rem;
+  font-weight: 500;
+}
+
+.demo-note {
+  padding-bottom: .5rem;
+  font-size: .85rem;
+  opacity: .75;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .demo-card {
+    transition: none;
+  }
+}
+
+/* Keep the navbar on one line at laptop widths */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .navbar-brand h3 {
+    font-size: 1.35rem;
+  }
+
+  .navbar-nav.h2 {
+    font-size: 1.35rem;
+  }
+}

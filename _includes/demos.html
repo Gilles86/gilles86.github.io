@@ -1,0 +1,11 @@
+<div class="row row-cols-2 g-3 mb-4">
+  {% for demo in site.data.demos %}
+  <div class="col">
+    <a class="demo-card" href="{{ demo.url | relative_url }}">
+      <img class="img-fluid" src="{{ demo.image | relative_url }}" alt="{{ demo.alt | escape }}" width="640" height="400">
+      <span class="demo-title">{{ demo.title }}</span>
+      <span class="demo-note">{{ demo.note }}</span>
+    </a>
+  </div>
+  {% endfor %}
+</div>
