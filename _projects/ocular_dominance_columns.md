@@ -3,7 +3,7 @@ layout: post
 title: "Ocular dominance columns, retinotopy and cortical depth"
 collaborators: [Tomas Knapen]
 status: past
-order: 3
+order: 4
 ---
 Using the increased SNR of 7T MRI combined with *surface coils (built with
 smaller coil elements that are placed very close to the skull), we can obtain

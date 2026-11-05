@@ -7,8 +7,9 @@ permalink: /projects/
 <div class="col-md-3 d-none d-md-block">
 </div>
 <div class="col-12 col-md-9 text-align-left">
-<p> On this page, you will find some information on former and ongoing
-projects:
+<p>I work in the lab of <a href="https://www.econ.uzh.ch/en/people/faculty/ruff.html">Christian Ruff</a>
+at the <a href="https://www.zne.uzh.ch/en.html">Zurich Center for Neuroeconomics</a>, where most of my
+current projects are based. On this page, you will find some information on ongoing and former projects:
 
 <h5>Ongoing</h5>
 <ul>
@@ -34,6 +35,7 @@ projects:
 
 {% assign projects = site.projects | sort:'order' %}
 {% for project in projects %}
+{% assign id = project.id | split:"/" | last %}
 
 
 <div id="{{ id }}" class="row">
