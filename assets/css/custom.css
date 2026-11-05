@@ -45,3 +45,15 @@ h4, h5, h6 {
   margin-bottom: .5rem;
   cursor: pointer;
 }
+
+/* Keep images modest once the columns stack on phones */
+@media (max-width: 767.98px) {
+  .portrait {
+    max-width: 160px;
+  }
+
+  .paper-thumb {
+    max-height: 200px;
+    width: auto;
+  }
+}

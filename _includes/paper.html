@@ -1,5 +1,5 @@
 <div class="row my-2">
-  <div class="col-3 text-center">
+  <div class="col-12 col-md-3 text-center mb-2 mb-md-0">
 
     {% assign image_path = paper.path | split:'/' | last  %}
     {% assign image_path = image_path | replace:'.md':'.png' %}
@@ -17,10 +17,10 @@
     {% endif %}
 
     {% assign image_file = site.static_files | where_exp: "static_file", "static_file.path contains image_path" | first %}
-    {% if image_file %}<a data-bs-toggle="collapse" href="#abstract_{{paper_id}}" role="button" aria-expanded="false" aria-controls="abstract_{{paper_id}}"><img class="img-fluid rounded" src="{{ image_file.path }}"></a>{% endif %}
+    {% if image_file %}<a data-bs-toggle="collapse" href="#abstract_{{paper_id}}" role="button" aria-expanded="false" aria-controls="abstract_{{paper_id}}"><img class="img-fluid rounded paper-thumb" src="{{ image_file.path }}" alt="Figure from {{ paper.title | escape }}" loading="lazy"></a>{% endif %}
 
   </div>
-  <div class="col-9 text-align-left align-middle mb-2 mt-2">
+  <div class="col-12 col-md-9 text-align-left align-middle mb-2 mt-2">
     <h6 class="mb-1"><a class="link-dark text-decoration-none" href="{{ paper_url }}">{{ paper.title }} {% if pdf_file %}(<i class="fas fa-file-pdf"></i>){% endif %}</a></h6>
     <p class="text-muted mb-1"><small>
         {% for author_ in paper.authors %}
@@ -33,7 +33,7 @@
         {% endfor %}
       </small>
     </p>
-    <p class="mb-1"><em>{{ paper.journal }}</em> {{ paper.ref }}
+    <p class="mb-1"><em>{{ paper.journal }}</em> {% unless paper.preprint %}{{ paper.ref }}{% endunless %}
 
       {% if paper.doi %}
       doi: <a class="link-dark" href="https://doi.org/{{ paper.doi }}">{{ paper.doi }}</a>

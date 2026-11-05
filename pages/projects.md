@@ -4,9 +4,9 @@ title: Projects
 permalink: /projects/
 ---
 <div class="row">
-<div class="col-3">
+<div class="col-md-3 d-none d-md-block">
 </div>
-<div class="col-9 text-align-left">
+<div class="col-12 col-md-9 text-align-left">
 <p> On this page, you will find some information on former and ongoing
 projects:
 
@@ -37,11 +37,11 @@ projects:
 
 
 <div id="{{ id }}" class="row">
-<div class="col-3">
+<div class="col-md-3 d-none d-md-block">
 </div>
 
 
-<div class="col-9 text-align-left">
+<div class="col-12 col-md-9 text-align-left">
 <h3 class="mb-2 mt-3 text-dark"><u>{{ project.title }}</u></h3>
 <p class="text-muted mb-1"><small><strong>Collaborators:</strong>
 {% for collaborator_ in project.collaborators %}

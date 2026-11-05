@@ -22,17 +22,40 @@ title: Gilles de Hollander, PhD
 email: gilles.de.hollander@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Gilles de Hollander is a cognitive neuroscientist, based at the Zurich
-  Center for Neuroeconomics (ZNE) at the University of Zurich (UZH) (tes)
+  Center for Neuroeconomics (ZNE) at the University of Zurich (UZH).
+tagline: Cognitive neuroscientist at the University of Zurich
+author: Gilles de Hollander
 baseurl: "" # the subpath of your site, e.g. /blog
-domain: gilles86.github.io
-url: https://gilles86.github.io # the base hostname & protocol for your site, e.g. http://example.com
+domain: www.gillesdehollander.nl
+url: https://www.gillesdehollander.nl # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: GillesdeH
 github_username:  Gilles86
 
 # Build settings
 # theme: minima
-# plugins:
-#   - jekyll-feed
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Portrait as the default social preview; leave the placeholder posts out of the sitemap
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/imgs/picture_gilles_2026.jpg
+  - scope:
+      path: ""
+      type: posts
+    values:
+      sitemap: false
+  - scope:
+      path: "assets/pdfs/cv_gilles_nov2021.pdf"
+    values:
+      sitemap: false
+  - scope:
+      path: "assets/pdfs/cv_gilles_feb2022.pdf"
+    values:
+      sitemap: false
 
 # Compile sass
 sass:
@@ -69,6 +92,8 @@ collections:
 #
 exclude:
   - CLAUDE.md
+  - Gemfile
+  - Gemfile.lock
   - serve_docker.sh
   - README.md
 

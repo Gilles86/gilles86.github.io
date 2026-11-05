@@ -6,7 +6,7 @@ simple_layout: true
 img: assets/imgs/picture_gilles_2026.jpg
 ---
 
-<div class="card mt-4" style="width: 40rem;">
+<div class="card mt-4" style="max-width: 40rem;">
   <div class="card-header">
     <h4 class="card-title">Education/positions</h4>
   </div>
@@ -52,7 +52,7 @@ img: assets/imgs/picture_gilles_2026.jpg
 </div>
 </div>
 
-<div class="card mt-4" style="width: 40rem;">
+<div class="card mt-4" style="max-width: 40rem;">
 <div class="card-header">
 <h4 class="card-title">Grants</h4>
 </div>
@@ -71,7 +71,7 @@ img: assets/imgs/picture_gilles_2026.jpg
     <p class="card-text">EUR 158,000</p>      
   </div>    
   <a href="https://www.nwo.nl/en/researchprogrammes/rubicon">
-  <img class="card-img-bottom p-4" src="/assets/imgs/nwo-logo.png">
+  <img class="card-img-bottom p-4" src="/assets/imgs/nwo-logo.png" alt="NWO logo">
   </a>
   </div>
 </div>
@@ -87,7 +87,7 @@ img: assets/imgs/picture_gilles_2026.jpg
       <p class="card-text">CHF 110,384</p>      
       </div>
 
-    <a href="https://www.research.uzh.ch/en/funding/postdoc.html"><img class="card-img-bottom p-4" src="{{ '/assets/imgs/uzh_logo.svg' | relative_url }}"></a>
+    <a href="https://www.research.uzh.ch/en/funding/postdoc.html"><img class="card-img-bottom p-4" src="{{ '/assets/imgs/uzh_logo.svg' | relative_url }}" alt="University of Zurich logo"></a>
     </div>
   </div>
 
@@ -96,7 +96,7 @@ img: assets/imgs/picture_gilles_2026.jpg
 </div>
 
 
-<div class="card mt-4" style="width: 40rem;">
+<div class="card mt-4" style="max-width: 40rem;">
 <div class="card-header">
 <h4 class="card-title">Open-source software</h4>
 </div>
@@ -120,7 +120,7 @@ img: assets/imgs/picture_gilles_2026.jpg
 </div>
 </div>
 
-<div class="card mt-4" style="width: 40rem;">
+<div class="card mt-4" style="max-width: 40rem;">
 <div class="card-header">
 <h4 class="card-title">Research aims</h4>
 </div>
@@ -174,7 +174,7 @@ _whole-brain UHF-fMRI measurements_.
 </div>
 </div>
 
-<div class="card mt-4" style="width: 40rem;">
+<div class="card mt-4" style="max-width: 40rem;">
 <div class="card-header">
 <h4 class="card-title">Contact information</h4>
 </div>

@@ -3,7 +3,8 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title: Welcome
+title: Gilles de Hollander, PhD
+heading: Welcome
 ---
 I am a cognitive neuroscientist based at the [Zurich Center for Neuroeconomics
 (ZNE)](https://www.zne.uzh.ch/en.html) at the University of Zurich (UZH).
