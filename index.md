@@ -14,19 +14,23 @@ and how their **decisions are shaped by fundamental properties of brain architec
 ### Updates
 
 #### 2026
- * **2026-11-05** Our paper with [Arthur Prat-Carrabin](https://arthurprat.com) (shared first authorship) and [Sam Gershman](https://gershmanlab.com) showing that **numerical receptive fields in parietal cortex shift and rescale to the range of numbers** is now [out in *Nature Communications*](https://doi.org/10.1038/s41467-026-78851-9). You can explore the receptive fields of every participant in our [interactive 3D brain viewers](https://ruffgroup.github.io/neural_priors_viewers/).
- * **2026-10-11** Check out our new [preprint](https://doi.org/10.64898/2026.10.08.757623) led by Maike Renkert, joint work with Karin Kucian and Sofie Valk, showing that **dyscalculia reflects both less precise numerical representations in parietal cortex and an altered allocation of this cortex to functional networks**.
- * **2026-09-16** Our paper with [Arthur Prat-Carrabin](https://arthurprat.com) (shared first authorship) and [Sam Gershman](https://gershmanlab.com) showing that **numerical receptive fields in parietal cortex shift and rescale to the range of numbers** has been accepted in *Nature Communications* ([preprint](https://doi.org/10.1101/2025.09.25.675916)). This is a dynamic form of efficient coding that also shapes behavioural precision. You can explore the receptive fields of every participant in our [interactive 3D brain viewers](https://ruffgroup.github.io/neural_priors_viewers/).
- * **2026-09-10** Our paper showing that **rapid changes in risk attitudes originate from Bayesian inference on noisy parietal magnitude representations** is now [out in *Nature Communications*](https://doi.org/10.1038/s41467-026-77402-6). The same payoffs can elicit risk aversion or risk seeking, depending on how precisely they are represented in parietal cortex.
- * **2026-08-10** Explore our new [interactive 3D brain viewers](https://ruffgroup.github.io/neural_priors_viewers/) showing **numerosity receptive fields on the cortical surface of every participant** of our [preprint](https://www.biorxiv.org/content/10.1101/2025.09.25.675916v1) on numerical range adaptation.
- * **2026-06-12** Our cognitive-modelling package [bauer](https://ruffgroup.github.io/bauer/) now supports **DDM and race-diffusion likelihoods**, so models can be informed by reaction times as well as choices.
- * **2026-06-12** Check out our new [preprint](https://doi.org/10.64898/2026.06.08.730978) on how **separable efficient codes shape both perception and value** along the pathway from sensation to action.
- * **2026-04-04** Check out our new [preprint](https://doi.org/10.64898/2026.03.28.715037) on how **the OFC/vmPFC implements a probabilistic population code for value**.
 
-#### 2025
- * **2025-11-10** Check out our new [preprint](https://www.biorxiv.org/content/10.1101/2025.11.03.685504v1) on how **the effect of stress on risky decision-making and numerical representations**.
- * **2025-09-27** Check out our new [preprint](https://www.biorxiv.org/content/10.1101/2025.09.25.675916v1) on how **numerical receptive fields shift depending on task demands**.
- * **2025-09-21** Check out my [material](https://github.com/Gilles86/computation-in-neuroeconomics-workshop2025/) for a workshop on **Computational Methods for Neuroeconomics** in beautiful Soglio, Switzerland.
+{: .news}
+ * **Nov** [Out in *Nature Communications*](https://doi.org/10.1038/s41467-026-78851-9), with [Arthur Prat-Carrabin](https://arthurprat.com) and [Sam Gershman](https://gershmanlab.com): numerical receptive fields in parietal cortex shift and rescale to the range of numbers. Explore them in our [3D brain viewers](https://ruffgroup.github.io/neural_priors_viewers/).
+ * **Oct** [New preprint](https://doi.org/10.64898/2026.10.08.757623) led by Maike Renkert, with Karin Kucian and Sofie Valk: dyscalculia reflects less precise numerical representations in parietal cortex and an altered allocation of this cortex to functional networks.
+ * **Sep** [Out in *Nature Communications*](https://doi.org/10.1038/s41467-026-77402-6): rapid changes in risk attitudes originate from Bayesian inference on noisy parietal magnitude representations.
+ * **Jun** [New preprint](https://doi.org/10.64898/2026.06.08.730978): separable efficient codes shape both perception and value along the pathway from sensation to action.
+ * **Jun** Our cognitive-modelling package [bauer](https://ruffgroup.github.io/bauer/) now supports DDM and race-diffusion likelihoods.
+ * **Apr** [New preprint](https://doi.org/10.64898/2026.03.28.715037): the OFC/vmPFC implements a probabilistic population code for value.
+
+<details class="news-past" markdown="1">
+<summary>2025</summary>
+
+{: .news}
+ * **Nov** [New preprint](https://www.biorxiv.org/content/10.1101/2025.11.03.685504v1) on the effect of stress on risky decision-making and numerical representations.
+ * **Sep** [Material](https://github.com/Gilles86/computation-in-neuroeconomics-workshop2025/) from my workshop on Computational Methods for Neuroeconomics in Soglio, Switzerland.
+
+</details>
 
 To learn more about
  * **Who I am**, have a look at the [about]({{ site.baseurl }}{% link pages/about.md %})-page
