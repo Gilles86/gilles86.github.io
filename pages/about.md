@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 simple_layout: true
-img: assets/imgs/picture_gilles.jpg
+img: assets/imgs/picture_gilles_2026.jpg
 ---
 
 <div class="card mt-4" style="width: 40rem;">
