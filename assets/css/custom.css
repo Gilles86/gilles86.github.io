@@ -93,6 +93,11 @@ h4, h5, h6 {
   opacity: .75;
 }
 
+.demo-hint {
+  font-size: .85rem;
+  color: #6c757d;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .demo-card {
     transition: none;
