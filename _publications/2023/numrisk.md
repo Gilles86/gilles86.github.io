@@ -1,6 +1,5 @@
 ---
 selected: 3
-role: Co-first author
 layout: post
 title: "Individual risk attitudes arise from noise in neurocognitive magnitude representations"
 date:   2023-07-17 18:00:00

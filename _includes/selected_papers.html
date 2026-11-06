@@ -9,9 +9,10 @@
     </a>
     <div>
       <a class="link-dark" href="https://doi.org/{{ paper.doi }}">{{ paper.title }}</a>
-      <span class="selected-meta"><em>{{ paper.journal }}</em>{% if paper.preprint %} preprint{% endif %}, {{ paper.date | date: '%Y' }} &middot; {{ paper.role }}</span>
+      <span class="selected-authors">{% for author in paper.authors %}{{ author | replace: 'Gilles de Hollander', '<strong>Gilles de Hollander</strong>' | replace: '*', '<sup>*</sup>' }}{% unless forloop.last %}, {% endunless %}{% endfor %}</span>
+      <span class="selected-meta"><em>{{ paper.journal }}</em>{% if paper.preprint %} preprint{% endif %}, {{ paper.date | date: '%Y' }}</span>
     </div>
   </li>
   {% endfor %}
 </ul>
-<p class="mb-4"><a href="{{ '/publications/' | relative_url }}">All publications</a></p>
+<p class="mb-4 selected-meta"><sup>*</sup> Shared first authorship. <a href="{{ '/publications/' | relative_url }}">All publications</a></p>

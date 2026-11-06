@@ -142,8 +142,13 @@ h4, h5, h6 {
   width: 96px;
   height: 96px;
   object-fit: contain;
-  background: #fff;
   border-radius: .375rem;
+}
+
+.selected-authors {
+  display: block;
+  font-size: .85rem;
+  color: #495057;
 }
 
 .selected-meta {
