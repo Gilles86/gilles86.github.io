@@ -135,13 +135,13 @@ h4, h5, h6 {
 }
 
 .selected-thumb {
-  flex: 0 0 96px;
+  flex: 0 0 150px;
 }
 
 .selected-thumb img {
-  width: 96px;
-  height: 96px;
-  object-fit: contain;
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
   border-radius: .375rem;
 }
 
@@ -163,12 +163,65 @@ h4, h5, h6 {
   color: #6c757d;
 }
 
+/* Homepage software cards */
+.software-card {
+  display: block;
+  height: 100%;
+  padding: .75rem;
+  border: 1px solid #dee2e6;
+  border-radius: .375rem;
+  background-color: #fff;
+  color: #212529;
+  text-decoration: none;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.software-card:hover,
+.software-card:focus {
+  color: #212529;
+  transform: translateY(-3px);
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .08);
+}
+
+.software-card img {
+  display: block;
+  width: 100%;
+  height: 110px;
+  object-fit: contain;
+  margin-bottom: .5rem;
+}
+
+.software-name {
+  display: block;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.software-note {
+  display: block;
+  font-size: .85rem;
+  color: #6c757d;
+}
+
+@media (max-width: 575.98px) {
+  .selected-thumb {
+    flex-basis: 96px;
+  }
+
+  .selected-thumb img {
+    width: 96px;
+    height: 64px;
+  }
+}
+
 .demo-hint {
   font-size: .85rem;
   color: #6c757d;
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .software-card,
   .demo-card {
     transition: none;
   }

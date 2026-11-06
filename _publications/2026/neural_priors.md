@@ -1,5 +1,6 @@
 ---
 selected: 2
+thumb: /assets/imgs/selected/neural_priors.jpg
 layout: post
 title: "Distributed range adaptation in human parietal encoding of numbers"
 date:   2026-11-05 09:00:00

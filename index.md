@@ -22,12 +22,15 @@ brain stimulation.
  * **Risk attitudes shift from choice to choice.** Payoffs held in working memory are noisier and pulled towards the prior, which flips people between risk seeking and risk aversion ([*Nature Communications*, 2026](https://doi.org/10.1038/s41467-026-77402-6)).
  * **Number codes adapt in real time.** Parietal tuning shifts and rescales to the range of numbers, and the change in neural precision predicts the change in behavioural precision ([*Nature Communications*, 2026](https://doi.org/10.1038/s41467-026-78851-9)).
 
-The same framework now extends to probability, to value itself in orbitofrontal cortex,
-and to how perception and valuation each keep their own efficient code. Where it is
-heading: whether the brain builds *all* its internal scales, for number, probability,
-time and rank, with one shared cortical architecture. I build the open-source tools
-behind this work, [braincoder](https://braincoder-devs.github.io/) and
-[bauer](https://ruffgroup.github.io/bauer/).
+We now use the same approach to study value itself, which turns out to be carried by
+tuned neural populations in orbitofrontal cortex, and to ask whether perception and
+valuation each keep their own efficient code. The question I want to answer next is
+whether the brain uses one shared architecture for all the scales it builds, be it for
+numbers, time, rank or value.
+
+All of this runs on two open-source Python packages that I wrote and maintain:
+
+{% include software_cards.html %}
 
 ### Selected papers
 

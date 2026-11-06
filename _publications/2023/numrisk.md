@@ -1,5 +1,6 @@
 ---
 selected: 3
+thumb: /assets/imgs/selected/numrisk.png
 layout: post
 title: "Individual risk attitudes arise from noise in neurocognitive magnitude representations"
 date:   2023-07-17 18:00:00

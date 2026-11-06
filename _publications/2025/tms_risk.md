@@ -1,5 +1,6 @@
 ---
 selected: 4
+thumb: /assets/imgs/selected/tms_risk.png
 layout: post
 title: "Risk preferences causally rely on parietal magnitude representations: Evidence from combined TMS-fMRI"
 date:   2025-01-13 18:00:00

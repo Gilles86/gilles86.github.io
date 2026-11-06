@@ -1,5 +1,6 @@
 ---
 selected: 6
+thumb: /assets/imgs/selected/odcs.jpg
 layout: post
 title: "Ultra-high field fMRI reveals origins of feedforward and feedback activity within laminae of human ocular dominance columns"
 date:   2021-03-01 18:00:00

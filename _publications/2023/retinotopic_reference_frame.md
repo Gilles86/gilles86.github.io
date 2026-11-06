@@ -1,5 +1,6 @@
 ---
 selected: 5
+thumb: /assets/imgs/selected/retinotopic_reference_frame.png
 layout: post
 title: "A retinotopic reference frame for space throughout human visual cortex"
 date:   2026-05-01 18:00:00

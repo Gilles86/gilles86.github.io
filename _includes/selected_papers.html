@@ -5,7 +5,8 @@
   {% assign year_dir = paper.path | split: '/' | slice: -2, 1 | first %}
   <li>
     <a class="selected-thumb" href="https://doi.org/{{ paper.doi }}" tabindex="-1" aria-hidden="true">
-      <img src="{{ '/assets/imgs/publications/' | append: year_dir | append: '/' | append: slug | append: '.png' | relative_url }}" alt="" loading="lazy" width="96" height="96">
+      {% if paper.thumb %}{% assign thumb = paper.thumb %}{% else %}{% assign thumb = '/assets/imgs/publications/' | append: year_dir | append: '/' | append: slug | append: '.png' %}{% endif %}
+      <img src="{{ thumb | relative_url }}" alt="" loading="lazy" width="150" height="100">
     </a>
     <div>
       <a class="link-dark" href="https://doi.org/{{ paper.doi }}">{{ paper.title }}</a>
