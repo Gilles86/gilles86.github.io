@@ -12,7 +12,7 @@ cognitive neuroscience. Two of them sit at the heart of most of my research:
 <div class="card mb-4 shadow-sm">
   <div class="row g-0 align-items-center">
     <div class="col-md-5">
-      <img src="{{ '/assets/imgs/software/braincoder.png' | relative_url }}" class="img-fluid rounded-start p-3" alt="Two Gaussian population receptive field tuning curves over a stimulus feature axis">
+      <img src="{{ '/assets/imgs/software/braincoder_scheme.png' | relative_url }}" class="img-fluid rounded-start p-3" alt="Tuning curves encode a stimulus into voxel responses, which braincoder decodes back into a posterior over the stimulus">
     </div>
     <div class="col-md-7">
       <div class="card-body">
@@ -38,7 +38,7 @@ cognitive neuroscience. Two of them sit at the heart of most of my research:
 <div class="card mb-4 shadow-sm">
   <div class="row g-0 align-items-center">
     <div class="col-md-5">
-      <img src="{{ '/assets/imgs/software/bauer.png' | relative_url }}" class="img-fluid rounded-start p-3" alt="Drift-diffusion model fit: psychometric choice curve and reaction times by difficulty">
+      <img src="{{ '/assets/imgs/software/bauer_scheme.png' | relative_url }}" class="img-fluid rounded-start p-3" alt="A Bayesian observer combines a prior with a noisy likelihood, fitted hierarchically to choice data">
     </div>
     <div class="col-md-7">
       <div class="card-body">
