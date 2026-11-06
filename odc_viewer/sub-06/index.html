@@ -40040,115 +40040,96 @@ THREE.CTMLoader.prototype.loadParts = function( url, callback, parameters ) {
 
 THREE.CTMLoader.prototype.load = function( url, callback, parameters ) {
 
+    // Patched: retry a failed or stalled download, then tell the visitor
+    // instead of leaving "Loading brain..." up forever.
     var scope = this;
-
     var offsets = parameters.offsets !== undefined ? parameters.offsets : [ 0 ];
     var useBuffers = parameters.useBuffers !== undefined ? parameters.useBuffers : true;
+    var maxAttempts = 3, stallMs = 30000;
 
-    var xhr = new XMLHttpRequest(),
-        callbackProgress = null;
-
-    var length = 0;
-
-    xhr.onreadystatechange = function() {
-
-        if ( xhr.readyState === 4 ) {
-
-            if ( xhr.status === 200 || xhr.status === 0 ) {
-
-                var binaryData = new Uint8Array(xhr.response);
-
-                var s = Date.now();
-
-                if ( parameters.useWorker ) {
-
-                    var worker = new Worker( window.URL.createObjectURL(new Blob([document.getElementById('CTMWorker').textContent])) );
-
-                    worker.onmessage = function( event ) {
-
-                        var ctmFile = event.data;
-
-                        var e1 = Date.now();
-                        // console.log( "CTM data parse time [worker]: " + (e1-s) + " ms" );
-
-                        if ( useBuffers ) {
-
-                            scope.createModelBuffers( ctmFile, callback );
-
-                        } else {
-
-                            scope.createModelClassic( ctmFile, callback );
-
-                        }
-
-                        var e = Date.now();
-                        console.log( "model load time [worker]: " + (e-e1) + " ms, total: " + (e-s));
-
-                    };
-
-                    worker.postMessage( { "data": binaryData.buffer, "offsets": offsets } );
-
-                } else {
-
-                    for ( var i = 0; i < offsets.length; i ++ ) {
-
-                        var stream = new CTM.Stream( binaryData.buffer );
-                        stream.offset = offsets[ i ];
-
-                        var ctmFile = new CTM.File( stream );
-
-                        if ( useBuffers ) {
-
-                            scope.createModelBuffers( ctmFile, callback );
-
-                        } else {
-
-                            scope.createModelClassic( ctmFile, callback );
-
-                        }
-
-                    }
-
-                    //var e = Date.now();
-                    //console.log( "CTM data parse time [inline]: " + (e-s) + " ms" );
-
-                }
-
-            } else {
-
-                console.error( "Couldn't load [" + url + "] [" + xhr.status + "]" );
-
-            }
-
-        } else if ( xhr.readyState === 3 ) {
-
-            if ( callbackProgress ) {
-
-                if ( length === 0 ) {
-
-                    length = xhr.getResponseHeader( "Content-Length" );
-
-                }
-
-                callbackProgress( { total: length, loaded: xhr.responseText.length } );
-
-            }
-
-        } else if ( xhr.readyState === 2 ) {
-
-            length = xhr.getResponseHeader( "Content-Length" );
-
-        }
-
+    function build( ctmFile ) {
+        if ( useBuffers ) scope.createModelBuffers( ctmFile, callback );
+        else scope.createModelClassic( ctmFile, callback );
     }
 
-    xhr.open( "GET", url, true );
-    xhr.responseType = "arraybuffer";
+    function giveUp( reason ) {
+        console.error( "Couldn't load [" + url + "]: " + reason );
+        var msg = document.getElementById( "ctmload" );
+        if ( msg ) {
+            msg.innerHTML = "<p>The brain surface did not finish downloading.</p>" +
+                "<p><a href='#' onclick='location.reload(); return false;'>Reload the page</a> to try again.</p>";
+            msg.style.display = "";
+        }
+    }
 
-    xhr.send( null );
+    function attempt( n ) {
+        var xhr = new XMLHttpRequest(), timer = null, settled = false;
+
+        function retry( reason ) {
+            if ( n < maxAttempts ) {
+                console.warn( "Loading [" + url + "] failed (" + reason + "), retrying" );
+                attempt( n + 1 );
+            } else {
+                giveUp( reason );
+            }
+        }
+
+        function fail( reason ) {
+            if ( settled ) return;
+            settled = true;
+            clearTimeout( timer );
+            xhr.abort();
+            retry( reason );
+        }
+
+        function arm() {
+            clearTimeout( timer );
+            timer = setTimeout( function() { fail( "download stalled" ); }, stallMs );
+        }
+
+        xhr.onprogress = arm;
+        xhr.onerror = function() { fail( "network error" ); };
+        xhr.onload = function() {
+            if ( settled ) return;
+            if ( !( xhr.status === 200 || xhr.status === 0 ) || !xhr.response || xhr.response.byteLength === 0 ) {
+                fail( "HTTP " + xhr.status );
+                return;
+            }
+            settled = true;
+            clearTimeout( timer );
+            var binaryData = new Uint8Array( xhr.response );
+
+            if ( parameters.useWorker ) {
+                var worker = new Worker( window.URL.createObjectURL( new Blob( [ document.getElementById( 'CTMWorker' ).textContent ] ) ) );
+                worker.onmessage = function( event ) { build( event.data ); };
+                worker.onerror = function( e ) {
+                    e.preventDefault();
+                    retry( "could not parse the mesh" );
+                };
+                worker.postMessage( { "data": binaryData.buffer, "offsets": offsets } );
+            } else {
+                try {
+                    for ( var i = 0; i < offsets.length; i ++ ) {
+                        var stream = new CTM.Stream( binaryData.buffer );
+                        stream.offset = offsets[ i ];
+                        build( new CTM.File( stream ) );
+                    }
+                } catch ( err ) {
+                    retry( "could not parse the mesh" );
+                }
+            }
+        };
+
+        var src = n === 1 ? url : url + ( url.indexOf( "?" ) < 0 ? "?" : "&" ) + "retry=" + n;
+        xhr.open( "GET", src, true );
+        xhr.responseType = "arraybuffer";
+        arm();
+        xhr.send( null );
+    }
+
+    attempt( 1 );
 
 };
-
 
 THREE.CTMLoader.prototype.createModelBuffers = function ( file, callback ) {
 
