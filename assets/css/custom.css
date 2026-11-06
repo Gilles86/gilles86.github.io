@@ -153,8 +153,8 @@ h4, h5, h6 {
 }
 
 .selected-authors strong {
-  font-weight: 500;
-  color: #343a40;
+  font-weight: 400;
+  color: #212529;
 }
 
 .selected-meta {
