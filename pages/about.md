@@ -13,11 +13,12 @@ img: assets/imgs/picture_gilles_2026.jpg
 <div class="card-body">
 
 {% capture aim %}
-I study how the **limits of neural representation shape everyday decisions**. Payoffs,
-probabilities and values are encoded by noisy populations of tuned neurons, and people
-decide by inferring what is out there from these noisy codes. Prior knowledge and noise
-then produce systematic biases, such as risk aversion, that classical economics
-attributes to taste.
+I study **how the brain represents the world, and how the limits of those
+representations shape perception and decisions**. Visual space, numbers and values are
+all encoded by noisy populations of tuned neurons, and people perceive and decide by
+inferring what is out there from these noisy codes. Prior knowledge and noise then
+produce systematic biases, such as risk aversion, that are usually explained in very
+different terms.
 
 My approach combines three things:
 

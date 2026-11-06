@@ -9,24 +9,23 @@ heading: Welcome
 I am a cognitive neuroscientist in the lab of [Christian Ruff](https://www.econ.uzh.ch/en/people/faculty/ruff.html) at the [Zurich Center for Neuroeconomics
 (ZNE)](https://www.zne.uzh.ch/en.html), University of Zurich (UZH).
 
-**Economic decisions inherit the limits of perception.** The brain does not see payoffs,
-probabilities or values as they are: it encodes them in noisy populations of tuned
-neurons, and our choices are inferences on those noisy codes. I measure these codes in
-individual human brains with ultra-high-field (7T) fMRI and encoding models, link their
-precision to behaviour with Bayesian cognitive models, and test their causal role with
-brain stimulation.
+**I want to understand how the brain represents the world, and how the limits of those
+representations shape what we perceive and decide.** Neural populations encode visual
+space, numbers and value with limited precision, and much of our behaviour, including
+choices that look irrational, follows from how the brain makes the most of these noisy
+codes. I measure such codes in individual human brains with ultra-high-field (7T) fMRI
+and encoding models, relate them to behaviour with computational models, and test their
+role with causal manipulations such as brain stimulation.
 
 {: .findings}
- * **Risk aversion has a perceptual origin.** People whose parietal cortex encodes payoff magnitudes more precisely are less risk averse ([*Nature Human Behaviour*, 2023](https://doi.org/10.1038/s41562-023-01643-4)).
- * **The link is causal.** Disrupting parietal number representations with TMS makes small payoffs noisier and choices more risk seeking ([preprint, 2025](https://doi.org/10.1101/2025.01.13.632678)).
- * **Risk attitudes shift from choice to choice.** Payoffs held in working memory are noisier and pulled towards the prior, which flips people between risk seeking and risk aversion ([*Nature Communications*, 2026](https://doi.org/10.1038/s41467-026-77402-6)).
- * **Number codes adapt in real time.** Parietal tuning shifts and rescales to the range of numbers, and the change in neural precision predicts the change in behavioural precision ([*Nature Communications*, 2026](https://doi.org/10.1038/s41467-026-78851-9)).
+ * **Risk attitudes start in perception.** People whose parietal cortex encodes payoff magnitudes more precisely are less risk averse ([*Nature Human Behaviour*, 2023](https://doi.org/10.1038/s41562-023-01643-4)), disrupting these representations with TMS makes them more risk seeking ([preprint, 2025](https://doi.org/10.1101/2025.01.13.632678)), and noisier payoffs held in memory shift risk attitudes from one choice to the next ([*Nature Communications*, 2026](https://doi.org/10.1038/s41467-026-77402-6)).
+ * **Neural codes adapt to context.** Number tuning in parietal cortex shifts and rescales with the range of numbers, and the change in neural precision predicts the change in behavioural precision ([*Nature Communications*, 2026](https://doi.org/10.1038/s41467-026-78851-9)).
+ * **Value has a population code too.** Orbitofrontal cortex carries a probabilistic population code for value, and its decoded uncertainty predicts how stable people's preferences are ([preprint, 2026](https://doi.org/10.64898/2026.03.28.715037)).
+ * **Vision at the scale of columns and layers.** At 0.7 mm resolution, fMRI separates feedforward input from attentional feedback across the layers of ocular dominance columns ([*NeuroImage*, 2021](https://doi.org/10.1016/j.neuroimage.2020.117683)), and visual cortex represents space in retinotopic coordinates ([*eLife*, 2026](https://doi.org/10.7554/eLife.110134.1)).
 
-We now use the same approach to study value itself, which turns out to be carried by
-tuned neural populations in orbitofrontal cortex, and to ask whether perception and
-valuation each keep their own efficient code. The question I want to answer next is
-whether the brain uses one shared architecture for all the scales it builds, be it for
-numbers, time, rank or value.
+Next, I want to find out whether the brain uses one shared architecture for all the
+scales it builds, for numbers, time, rank and value, and whether the shape of each neural
+scale explains where our judgements are precise and where they are biased.
 
 All of this runs on two open-source Python packages that I wrote and maintain:
 
