@@ -12,7 +12,7 @@ cognitive neuroscience. Two of them sit at the heart of most of my research:
 <div class="card mb-4 shadow-sm">
   <div class="row g-0 align-items-center">
     <div class="col-md-5">
-      <img src="{{ '/assets/imgs/software/braincoder_scheme.png' | relative_url }}" class="img-fluid rounded-start p-3" alt="Tuning curves encode a stimulus into voxel responses, which braincoder decodes back into a posterior over the stimulus">
+      <img src="{{ '/assets/imgs/software/braincoder_brain.png' | relative_url }}" class="img-fluid rounded-start p-3" alt="Tuning curves encode a stimulus into voxel responses, which braincoder decodes back into a posterior over the stimulus">
     </div>
     <div class="col-md-7">
       <div class="card-body">

@@ -37,7 +37,10 @@ def arrow(fig, x0, x1, y, text):
 # braincoder: tuning curves -> voxel responses -> decoded posterior
 fig = plt.figure(figsize=(6.8, 2.0))
 ax1 = fig.add_axes([0.02, 0.18, 0.30, 0.68])
-ax2 = fig.add_axes([0.42, 0.18, 0.16, 0.68])
+ax2 = fig.add_axes([0.425, 0.18, 0.15, 0.30])
+axb = fig.add_axes([0.40, 0.52, 0.20, 0.46])
+axb.imshow(plt.imread(__file__.rsplit('/', 1)[0] + '/brain_icon.png'))
+axb.set_axis_off()
 ax3 = fig.add_axes([0.68, 0.18, 0.30, 0.68])
 
 x = np.linspace(0, 1, 400)
@@ -68,9 +71,9 @@ ax3.set_xlim(0, 1); ax3.set_ylim(0, 1.15)
 ax3.set_xlabel('Decoded stimulus', color=INK, labelpad=3)
 clean(ax3)
 
-arrow(fig, 0.335, 0.405, 0.52, 'Encode')
-arrow(fig, 0.595, 0.665, 0.52, 'Decode')
-fig.savefig(f'{out}/braincoder_scheme.png')
+arrow(fig, 0.335, 0.405, 0.33, 'Encode')
+arrow(fig, 0.595, 0.665, 0.33, 'Decode')
+fig.savefig(f'{out}/braincoder_brain.png')
 plt.close(fig)
 
 # bauer: prior x noisy likelihood -> posterior; hierarchical fit of choices
