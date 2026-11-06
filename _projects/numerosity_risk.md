@@ -20,14 +20,17 @@ money? This idea is formalized in a theoretical framework developed by
 [Khaw, Li and Woodford](https://www.nber.org/papers/w24978).
 
 {% capture description %}
-<em>Numerical receptive field models</em> measure which numbers different patches
-of cortex respond to most. Neural populations in parietal cortex turn out to be
-tuned to specific numbers, which makes this region a good place to study the
-representations people use during economic decisions.
+<strong>(a)</strong> <em>Numerical receptive field models</em> show that patches of
+parietal cortex prefer specific numbers, laid out as maps.
+<strong>(b)</strong> These populations are tuned on a logarithmic scale.
+<strong>(c)</strong> A noisy log code plus prior knowledge makes large payoffs look
+smaller than they are, more so when the code is noisier.
+<strong>(d)</strong> As a result, people need a larger premium before they take a gamble:
+risk aversion without any dislike of risk. Panels b–d are model illustrations.
 {% endcapture %}
 
-{% include image.html url="/assets/imgs/projects/numerosity_risk/numberfields.png"
-description=description width="75" %}
+{% include image.html url="/assets/imgs/projects/numerosity_risk/perception_choice.png"
+description=description width="100" %}
 
 We use these *numerical population receptive field models*, which build on
 [seminal work](https://www.science.org/doi/full/10.1126/science.1239052) by Ben

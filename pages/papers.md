@@ -10,7 +10,7 @@ title: Publications
 <div class="col-md-3 d-none d-md-block">
 </div>
 <div class="col-12 col-md-9 text-align-left">
-<h3 class="mb-2 mt-3"><u>Preprints</u></h3>
+<h3 class="mb-2 mt-3">Preprints</h3>
 </div>
 </div>
 {% for paper in preprints %}
@@ -27,7 +27,7 @@ title: Publications
   <div class="col-md-3 d-none d-md-block">
   </div>
   <div class="col-12 col-md-9 text-align-left">
-  <h3 class="mb-2 mt-3"><u>{{ year.name }}</u></h3>
+  <h3 class="mb-2 mt-3">{{ year.name }}</h3>
   </div>
 </div>
 

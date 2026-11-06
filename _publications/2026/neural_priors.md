@@ -1,4 +1,6 @@
 ---
+selected: 2
+role: Co-first author
 layout: post
 title: "Distributed range adaptation in human parietal encoding of numbers"
 date:   2026-11-05 09:00:00

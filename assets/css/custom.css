@@ -1,11 +1,31 @@
 /* Custom colors and fonts */
 body {
-  background-color: #CDC42D !important;  /* Your yellow background */
+  background-color: #DDD9C6 !important;  /* Muted sand; was mustard #CDC42D */
   font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3 {
   font-family: 'Dosis', sans-serif;
+  font-weight: 600;
+  letter-spacing: .01em;
+}
+
+/* Quieter page titles: smaller, with a thin accent rule instead of an underline */
+h1 {
+  font-size: 2.1rem;
+  padding-bottom: .35rem;
+  border-bottom: 3px solid #CDC42D;
+  display: inline-block;
+}
+
+/* Navbar: keep Dosis, but smaller and spaced rather than shouted */
+.navbar-nav.h2 {
+  font-size: 1.15rem;
+  letter-spacing: .08em;
+}
+
+.navbar-brand h3 {
+  font-size: 1.5rem;
 }
 
 h4, h5, h6 {
@@ -93,6 +113,45 @@ h4, h5, h6 {
   opacity: .75;
 }
 
+/* Homepage key findings and selected papers */
+.findings {
+  padding-left: 1.1rem;
+}
+
+.findings li {
+  margin-bottom: .35rem;
+}
+
+.selected-papers {
+  list-style: none;
+  padding-left: 0;
+}
+
+.selected-papers li {
+  display: flex;
+  gap: .9rem;
+  align-items: center;
+  margin-bottom: .75rem;
+}
+
+.selected-thumb {
+  flex: 0 0 96px;
+}
+
+.selected-thumb img {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: .375rem;
+}
+
+.selected-meta {
+  display: block;
+  font-size: .85rem;
+  color: #6c757d;
+}
+
 .demo-hint {
   font-size: .85rem;
   color: #6c757d;
@@ -107,10 +166,10 @@ h4, h5, h6 {
 /* Keep the navbar on one line at laptop widths */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .navbar-brand h3 {
-    font-size: 1.35rem;
+    font-size: 1.3rem;
   }
 
   .navbar-nav.h2 {
-    font-size: 1.35rem;
+    font-size: 1.05rem;
   }
 }

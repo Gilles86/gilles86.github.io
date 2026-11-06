@@ -1,0 +1,17 @@
+{% assign selected = site.publications | where_exp: "pub", "pub.selected" | sort: "selected" %}
+<ul class="selected-papers">
+  {% for paper in selected %}
+  {% assign slug = paper.path | split: '/' | last | replace: '.md', '' %}
+  {% assign year_dir = paper.path | split: '/' | slice: -2, 1 | first %}
+  <li>
+    <a class="selected-thumb" href="https://doi.org/{{ paper.doi }}" tabindex="-1" aria-hidden="true">
+      <img src="{{ '/assets/imgs/publications/' | append: year_dir | append: '/' | append: slug | append: '.png' | relative_url }}" alt="" loading="lazy" width="96" height="96">
+    </a>
+    <div>
+      <a class="link-dark" href="https://doi.org/{{ paper.doi }}">{{ paper.title }}</a>
+      <span class="selected-meta"><em>{{ paper.journal }}</em>{% if paper.preprint %} preprint{% endif %}, {{ paper.date | date: '%Y' }} &middot; {{ paper.role }}</span>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+<p class="mb-4"><a href="{{ '/publications/' | relative_url }}">All publications</a></p>

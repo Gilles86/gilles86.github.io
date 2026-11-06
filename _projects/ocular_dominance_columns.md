@@ -25,8 +25,8 @@ to a 0.64mm T1-weighted anatomical image.
 PRF model to quantify to which parts of the visual field different
 patches of V1 were most sensitive. This allowed us to relate
 columnar patterns to retinotopy, as well as define the border between V1
-and V2 by the charachteristic phase reversals in retinotopy.
-<strong>(C)</strong> By presenting flickering checkerboards seperately
+and V2 by the characteristic phase reversals in retinotopy.
+<strong>(C)</strong> By presenting flickering checkerboards separately
 to the two eyes, contained by a salient frame that helped eye convergence,
 we could map out ocular dominance columns: little ~1mm-wide stripes of
 corte that are particularly sensitive to the left or right eye.

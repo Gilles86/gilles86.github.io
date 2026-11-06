@@ -1,4 +1,6 @@
 ---
+selected: 5
+role: Co-first author
 layout: post
 title: "A retinotopic reference frame for space throughout human visual cortex"
 date:   2026-05-01 18:00:00

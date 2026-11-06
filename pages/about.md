@@ -7,48 +7,128 @@ img: assets/imgs/picture_gilles_2026.jpg
 ---
 
 <div class="card mt-4" style="max-width: 40rem;">
-  <div class="card-header">
-    <h4 class="card-title">Education/positions</h4>
-  </div>
+<div class="card-header">
+<h4 class="card-title">Research program</h4>
+</div>
+<div class="card-body">
 
-    <div class="card-body">
-    <h5 class="card-subtitle mb-2 text-muted">2019 - now: Postdoc with <a class="text-muted" href="https://www.econ.uzh.ch/en/people/faculty/ruff.html">Prof. Christian C. Ruff</a> (University of Zurich)</h5>
-    <p class="card-text">I used <strong>neural encoding models of numerical representations for fMRI</strong>
-    to characterize individual differences in <strong>numerical acuity</strong> and <strong>risk aversion</strong></p>
-    <hr>
-    </div>  
+{% capture aim %}
+I study how the **limits of neural representation shape everyday decisions**. Payoffs,
+probabilities and values are encoded by noisy populations of tuned neurons, and people
+decide by inferring what is out there from these noisy codes. Prior knowledge and noise
+then produce systematic biases, such as risk aversion, that classical economics
+attributes to taste.
+
+My approach combines three things:
+
+-   **Measuring neural codes in individual brains.** With ultra-high-field (7T) fMRI and
+    encoding models borrowed from visual neuroscience, I estimate how precisely each
+    person's cortex represents a quantity, and decode it back out trial by trial.
+-   **Formal models of behaviour.** Bayesian observer and sequential-sampling models
+    estimate the same noise and prior from people's choices and response times.
+-   **Causal tests.** Brain stimulation, stress, working-memory load and changes in
+    context manipulate the code, so we can see whether behaviour changes as predicted.
+
+Next, I want to find out whether the brain builds all of its internal scales, for
+number, probability, time, rank and value, with one shared architecture, and whether
+the shape of each neural scale predicts where people's judgements are precise and where
+they are biased.
+{% endcapture %}
+
+{{ aim | markdownify }}
+
+</div>
+</div>
+
+<div class="card mt-4" style="max-width: 40rem;">
+  <div class="card-header">
+    <h4 class="card-title">Positions and education</h4>
+  </div>
 
   <div class="card-body">
-  <h5 class="card-subtitle mb-2 text-muted">2017 - 2019: Postdoc with <a class="text-muted" href="https://tknapen.github.io/">Dr. Tomas Knapen</a> (Vrije Universiteit)</h5>
-    <p class="card-text">I mapped out <strong>ocular dominance columns</strong> and
-    <strong>retinotopy</strong> across cortical depth, using <strong>0.7mm isotropic functional MRI</strong>.</p>
+    <h5 class="card-subtitle mb-2 text-muted">2019 – now: Postdoctoral researcher with <a class="text-muted" href="https://www.econ.uzh.ch/en/people/faculty/ruff.html">Prof. Christian C. Ruff</a>, Zurich Center for Neuroeconomics, University of Zurich</h5>
+    <p class="card-text">I develop the neuroimaging approach and analyses for the lab's work on how
+    <strong>perception shapes economic choice</strong>, using <strong>numerical and value
+    receptive field models</strong> at 7T, <strong>Bayesian cognitive models</strong> and
+    <strong>TMS</strong>. I came to Zurich with an NWO Rubicon fellowship.</p>
     <hr>
   </div>
 
-
-    <div class="card-body">
-    <h5 class="card-subtitle mb-2 text-muted">2013 - 2018: PhD with <a class="text-muted" href="https://www.birteforstmann.com">Prof. Birte U. Forstmann</a> (University of Amsterdam)</h5>
-      <p class="card-text">I studied subdivisions in the <strong>subthalamic
-      nucleus</strong>, a subcortical node of the basal ganglia. I used <strong>
-      7 Tesla MRI</strong> and computational models like the <strong>drift diffusion
-      model (DDM)</strong></p>
-      <p class="card-text">For my PhD thesis, I
-       was awarded the <a href="http://societyforbrainandcognition.nl/dissertation-award/">
-      2018-2019 dissertation award from The Dutch Society for Brain
-      and Cognition</a>.</p>  
-      <p class="card-text"><a href="/assets/pdfs/thesis.pdf">Download thesis</a></p>  
-      <hr>
+  <div class="card-body">
+    <h5 class="card-subtitle mb-2 text-muted">2017 – 2019: Postdoctoral researcher with <a class="text-muted" href="https://tknapen.github.io/">Dr. Tomas Knapen</a>, Vrije Universiteit Amsterdam and Spinoza Centre</h5>
+    <p class="card-text">I mapped <strong>ocular dominance columns</strong> and
+    <strong>retinotopy</strong> across cortical depth with <strong>0.7 mm functional
+    MRI</strong>, in collaboration with the Chinese Academy of Sciences, Beijing.</p>
+    <hr>
   </div>
 
+  <div class="card-body">
+    <h5 class="card-subtitle mb-2 text-muted">2013 – 2018: PhD (cum laude) with <a class="text-muted" href="https://www.birteforstmann.com">Prof. Birte U. Forstmann</a>, University of Amsterdam</h5>
+    <p class="card-text">I studied the <strong>subthalamic nucleus</strong>, a small
+    subcortical node of the basal ganglia, with <strong>7 Tesla MRI</strong>, histology and
+    computational models such as the <strong>drift diffusion model</strong>. The thesis
+    received the <a href="http://societyforbrainandcognition.nl/dissertation-award/">
+    2018–2019 Dissertation Award of the Dutch Society for Brain and Cognition</a>.</p>
+    <p class="card-text"><a href="/assets/pdfs/thesis.pdf">Download thesis</a></p>
+    <hr>
+  </div>
 
-    <div class="card-body">
-      <h5 class="card-subtitle mb-2 text-muted">2010 - 2012: MSc in Artificial Intelligence</h5>
-      <p class="card-text">Focus on machine learning and computer vision</p>
-      <hr>
-    </div>
+  <div class="card-body">
+    <h5 class="card-subtitle mb-2 text-muted">2010 – 2012: Research Master in Artificial Intelligence, University of Amsterdam</h5>
+    <p class="card-text">Focus on machine learning and computer vision.</p>
+    <hr>
+  </div>
 
+  <div class="card-body">
+    <p class="card-text"><a href="/assets/pdfs/cv_gilles_oct2024.pdf"><strong>Download academic CV</strong></a></p>
+  </div>
+</div>
+
+<div class="card mt-4" style="max-width: 40rem;">
+<div class="card-header">
+<h4 class="card-title">Mentoring</h4>
+</div>
 <div class="card-body">
-<p class="card-text"><a href="/assets/pdfs/cv_gilles_oct2024.pdf"><strong>(Download academic CV)</strong></a></p>
+<p class="card-text">I co-supervise PhD students in the Ruff lab with Christian Ruff, as their
+day-to-day supervisor for imaging, analysis and modelling.</p>
+<ul>
+<li><strong>Maike F. Renkert</strong>, PhD 2026. Numerical representations in dyscalculia and under stress
+(<a href="https://doi.org/10.64898/2026.10.08.757623">dyscalculia preprint</a>, first author).</li>
+<li><strong>Saurabh Bedi</strong>, PhD 2026. Efficient coding in perception and value
+(<a href="https://doi.org/10.64898/2026.06.08.730978">perception-and-value preprint</a>, first author).</li>
+<li><strong>Alina Davydova</strong>, ongoing. Perceptual foundations of loss aversion.</li>
+<li><strong>Gaoyang Huang</strong>, ongoing. Neural codes for fractions and proportions.</li>
+<li>Earlier, at the University of Amsterdam: <strong>Steven Miletić</strong>, PhD (co-supervised).</li>
+</ul>
+</div>
+</div>
+
+<div class="card mt-4" style="max-width: 40rem;">
+<div class="card-header">
+<h4 class="card-title">Teaching</h4>
+</div>
+<div class="card-body">
+<ul>
+<li>2025: Workshop on computational methods for neuroeconomics, Soglio, Switzerland
+(<a href="https://github.com/Gilles86/computation-in-neuroeconomics-workshop2025/">course material</a>)</li>
+<li>2023 – 2024: Programming for data analysis, University of Zurich</li>
+<li>2012 – 2018: Lectures on model-based neuroimaging, machine learning and fMRI, University of Amsterdam</li>
+</ul>
+</div>
+</div>
+
+<div class="card mt-4" style="max-width: 40rem;">
+<div class="card-header">
+<h4 class="card-title">Recognition and invited talks</h4>
+</div>
+<div class="card-body">
+<ul>
+<li>2025: Invited plenary talk, Society for Neuroeconomics annual meeting, Boston</li>
+<li>2019: Dissertation Award, Dutch Society for Brain and Cognition</li>
+<li>Invited talks: VU Amsterdam (2023, 2026), University of Melbourne and University of
+Newcastle (2024), University of Basel (2022), Chinese Academy of Sciences, Beijing (2018),
+Radboud University Nijmegen (2017)</li>
+</ul>
 </div>
 </div>
 
@@ -62,14 +142,14 @@ img: assets/imgs/picture_gilles_2026.jpg
   <div class="card ">
   <div class="card-header">
     <h5 class="card-title">2018: NWO Rubicon grant</h5>
-  </div>    
+  </div>
   <div class="card-body">
-    <p class="card-text">To join the Zurich center for Neuroeconomics
+    <p class="card-text">To join the Zurich Center for Neuroeconomics
     and do research on the role of parietal numerosity representations
     in risky decision-making.</p>
-        <p class="card-text">1 Jul 2019 - 1 Sep 2021</p>      
-    <p class="card-text">EUR 158,000</p>      
-  </div>    
+        <p class="card-text">1 Jul 2019 - 1 Sep 2021</p>
+    <p class="card-text">EUR 158,000</p>
+  </div>
   <a href="https://www.nwo.nl/en/researchprogrammes/rubicon">
   <img class="card-img-bottom p-4" src="/assets/imgs/nwo-logo.png" alt="NWO logo">
   </a>
@@ -81,10 +161,10 @@ img: assets/imgs/picture_gilles_2026.jpg
       <h5 class="card-title">2021: UZH Forschungskredit</h5>
     </div>
       <div class="card-body">
-      <p class="card-text">To study influence of TMS on parietal number
-          representations during risky choice</p>
+      <p class="card-text">Sole applicant. To study the influence of TMS on parietal number
+          representations during risky choice.</p>
           <p class="card-text">1 Dec 2021 - 1 Dec 2022</p>
-      <p class="card-text">CHF 110,384</p>      
+      <p class="card-text">CHF 110,384</p>
       </div>
 
     <a href="https://www.research.uzh.ch/en/funding/postdoc.html"><img class="card-img-bottom p-4" src="{{ '/assets/imgs/uzh_logo.svg' | relative_url }}" alt="University of Zurich logo"></a>
@@ -103,9 +183,9 @@ img: assets/imgs/picture_gilles_2026.jpg
 <div class="card-body">
 <h5 class="card-subtitle mb-2 text-muted">Maintainer</h5>
 <ul>
-<li><a href="https://braincoder-devs.github.io/">braincoder</a> - Python package to fit inverted encoding models to neural data</li>
-<li><a href="https://github.com/ruffgroup/bauer/tree/main">bauer</a> - Python a package to fit complex choice models in a Bayesian hierarchical framework</li>
-<li><a href="https://nideconv.readthedocs.io/en/latest/">nideconv</a> -  Python package to deconvolve (neural) time series</li>
+<li><a href="https://braincoder-devs.github.io/">braincoder</a> - Python package to fit and invert encoding models of neural data</li>
+<li><a href="https://github.com/ruffgroup/bauer/tree/main">bauer</a> - Python package to fit Bayesian hierarchical cognitive models of choice</li>
+<li><a href="https://nideconv.readthedocs.io/en/latest/">nideconv</a> - Python package to deconvolve (neural) time series</li>
 <li><a href="https://pymp2rage.readthedocs.io/en/latest/">pymp2rage</a> - Python package to calculate T1 maps and T1UNI for a MP2RAGE sequence</li>
 </ul>
 
@@ -122,55 +202,14 @@ img: assets/imgs/picture_gilles_2026.jpg
 
 <div class="card mt-4" style="max-width: 40rem;">
 <div class="card-header">
-<h4 class="card-title">Research aims</h4>
+<h4 class="card-title">Service</h4>
 </div>
 <div class="card-body">
-
-{% capture aim %}
-I have a degree in **Artificial Intelligence** and did my PhD in the field of
-**ultra-high field (UHF) MRI** at field strengths of 7 Tesla and more
-with Prof. Birte Forstmann at the University of Amsterdam.
-I am convinced that UHF-fMRI has the potential to transform the field of
-humans neuroimaging, because the SNR is simply so much higher than at lower
-field strengths, allowing us to analyse brain data in _individual space_ and
-at the _mesoscopic resolution_ of subcortical nuclei, topographical maps,
-cortical columns, and cortical layers.
-
-During my first postdoc I got very excited about
-the experimental rigor and vast knowledge in **visual neuroscience**
-and the power of  **encoding models** that quantitatively model the
-relationship between objective properties of the world (e.g., the number
-of stimuli in a stimulus array) and neural activity. By inverting such
-models, we can track which information the brain has access to from
-moment-to-moment. I think this is a very useful measure to learn more about
-how the brain works.
-
-At the ZNE, I work on the question of **how the quirks of simple,
-everyday (economic) decisions are rooted in fundamental brain properties**.
-To me, a central and fundamental property of the brain is that is uses its
-costly representational capacity only where it is most needed.
-This has profound consequences for economic
-choice behavior. For example:
-
--   **People have trouble understanding the objective magnitude of large numbers**:
-    They tend to increasingly underestimate increasingly larger numbers.
-     This has important consequences for how they make decisions
-     where different numerical magnitudes play a role.
--   **Neural representations of the outside world are very noisy**. Thus, People
-    need to take into account this noise when they make decisions about the
-    outside world.
--   **People can meaningfully attend only one thing at at time**. Thus,
-    what people attend at a given moment in time has a huge influence
-    on how they make decisions. Analogously, neural representations of the
-    outside world are to a large extent shaped by attention as well.
-
-In my research, I try to formalise and empirically test such hypotheses
-using experiments involving _human subjects_ and
-_whole-brain UHF-fMRI measurements_.
-{% endcapture %}
-
-{{ aim | markdownify }}
-
+<ul>
+<li>2023 – 2024: Organiser of the weekly Zurich Center for Neuroeconomics seminar</li>
+<li>2020 – 2021: Representative of the Rubicon laureates, which helped secure EUR 20M for researchers on short contracts</li>
+<li>Reviewer for <em>Science Advances</em>, <em>PNAS</em>, <em>PLOS Biology</em>, <em>eLife</em>, <em>Cerebral Cortex</em>, <em>Human Brain Mapping</em> and <em>Journal of Cognitive Neuroscience</em></li>
+</ul>
 </div>
 </div>
 
@@ -185,5 +224,6 @@ _whole-brain UHF-fMRI measurements_.
 <p class="card-text" style="line-height: 1;">Blümlisalpstrasse 10, Room BLU-208  </p>
 <p class="card-text" style="line-height: 1;">8006 Zurich  </p>
 <p class="card-text" style="line-height: 1;"><a href="mailto:gilles.de.hollander@gmail.com">gilles.de.hollander@gmail.com</a></p>
+<p class="card-text" style="line-height: 1;">ORCID: <a href="https://orcid.org/0000-0003-1988-5091">0000-0003-1988-5091</a></p>
 </div>
 </div>

@@ -9,8 +9,29 @@ heading: Welcome
 I am a cognitive neuroscientist in the lab of [Christian Ruff](https://www.econ.uzh.ch/en/people/faculty/ruff.html) at the [Zurich Center for Neuroeconomics
 (ZNE)](https://www.zne.uzh.ch/en.html), University of Zurich (UZH).
 
-My main research aim is to understand how **humans make simple everyday decisions**
-and how their **decisions are shaped by fundamental properties of brain architecture**.
+**Economic decisions inherit the limits of perception.** The brain does not see payoffs,
+probabilities or values as they are: it encodes them in noisy populations of tuned
+neurons, and our choices are inferences on those noisy codes. I measure these codes in
+individual human brains with ultra-high-field (7T) fMRI and encoding models, link their
+precision to behaviour with Bayesian cognitive models, and test their causal role with
+brain stimulation.
+
+{: .findings}
+ * **Risk aversion has a perceptual origin.** People whose parietal cortex encodes payoff magnitudes more precisely are less risk averse ([*Nature Human Behaviour*, 2023](https://doi.org/10.1038/s41562-023-01643-4)).
+ * **The link is causal.** Disrupting parietal number representations with TMS makes small payoffs noisier and choices more risk seeking ([preprint, 2025](https://doi.org/10.1101/2025.01.13.632678)).
+ * **Risk attitudes shift from choice to choice.** Payoffs held in working memory are noisier and pulled towards the prior, which flips people between risk seeking and risk aversion ([*Nature Communications*, 2026](https://doi.org/10.1038/s41467-026-77402-6)).
+ * **Number codes adapt in real time.** Parietal tuning shifts and rescales to the range of numbers, and the change in neural precision predicts the change in behavioural precision ([*Nature Communications*, 2026](https://doi.org/10.1038/s41467-026-78851-9)).
+
+The same framework now extends to probability, to value itself in orbitofrontal cortex,
+and to how perception and valuation each keep their own efficient code. Where it is
+heading: whether the brain builds *all* its internal scales, for number, probability,
+time and rank, with one shared cortical architecture. I build the open-source tools
+behind this work, [braincoder](https://braincoder-devs.github.io/) and
+[bauer](https://ruffgroup.github.io/bauer/).
+
+### Selected papers
+
+{% include selected_papers.html %}
 
 ### Updates
 

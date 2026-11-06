@@ -1,4 +1,6 @@
 ---
+selected: 1
+role: First author
 layout: post
 title: "Rapid changes in risk attitudes originate from Bayesian inference on parietal magnitude representations"
 date:   2026-09-10 18:00:00
