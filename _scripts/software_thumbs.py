@@ -73,7 +73,7 @@ clean(ax3)
 
 arrow(fig, 0.335, 0.405, 0.33, 'Encode')
 arrow(fig, 0.595, 0.665, 0.33, 'Decode')
-fig.savefig(f'{out}/braincoder_brain.png')
+fig.savefig(f'{out}/braincoder_pycortex.png')
 plt.close(fig)
 
 # bauer: prior x noisy likelihood -> posterior; hierarchical fit of choices
