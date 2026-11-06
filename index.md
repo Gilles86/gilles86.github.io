@@ -12,10 +12,6 @@ I am a cognitive neuroscientist in the lab of [Christian Ruff](https://www.econ.
 My main research aim is to understand how **humans make simple everyday decisions**
 and how their **decisions are shaped by fundamental properties of brain architecture**.
 
-### Explore in 3D
-
-{% include demos.html %}
-
 ### Updates
 
 #### 2026
@@ -37,3 +33,7 @@ and how their **decisions are shaped by fundamental properties of brain architec
  * **Sep** [Material](https://github.com/Gilles86/computation-in-neuroeconomics-workshop2025/) from my workshop on Computational Methods for Neuroeconomics in Soglio, Switzerland.
 
 </details>
+
+### Explore in 3D
+
+{% include demos.html %}
