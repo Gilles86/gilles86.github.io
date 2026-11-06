@@ -147,8 +147,14 @@ h4, h5, h6 {
 
 .selected-authors {
   display: block;
-  font-size: .85rem;
-  color: #495057;
+  font-size: .72rem;
+  line-height: 1.35;
+  color: #6c757d;
+}
+
+.selected-authors strong {
+  font-weight: 500;
+  color: #343a40;
 }
 
 .selected-meta {
